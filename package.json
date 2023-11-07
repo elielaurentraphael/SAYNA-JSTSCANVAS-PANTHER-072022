@@ -1,0 +1,22 @@
+{
+	"name": "sayna-jstscanvas-panther-072022",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"sass": "sass --watch ./sass/main.scss:./css/styles.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/elielaurentraphael/SAYNA-JSTSCANVAS-PANTHER-072022.git"
+	},
+	"author": "elielaurentraphael",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/elielaurentraphael/SAYNA-JSTSCANVAS-PANTHER-072022/issues"
+	},
+	"homepage": "https://github.com/elielaurentraphael/SAYNA-JSTSCANVAS-PANTHER-072022#readme"
+}
