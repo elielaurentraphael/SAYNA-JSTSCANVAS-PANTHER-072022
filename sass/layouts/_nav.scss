@@ -1,0 +1,38 @@
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.3vw 8vw;
+	div {
+		img {
+			width: 7vw;
+			cursor: pointer;
+			&:hover {
+				filter: invert(92%) sepia(76%) saturate(6001%) hue-rotate(358deg)
+					brightness(38%) contrast(107%);
+			}
+		}
+		ul {
+			font-family: "BEYNO";
+			font-size: 1vw;
+			list-style: none;
+			li {
+				color: $menu-active-color;
+				display: inline-block;
+				margin-left: 3vw;
+				&.link-active {
+					text-decoration: underline;
+				}
+				a {
+					text-decoration: none;
+					color: $menu-color;
+					&:hover {
+						text-decoration: underline;
+						text-decoration-color: $menu-hover-underline-color;
+						-moz-text-decoration-color: $menu-hover-underline-color;
+					}
+				}
+			}
+		}
+	}
+}

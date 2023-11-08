@@ -1,0 +1,445 @@
+.wrapper {
+	background: $bg-wrapper;
+	header {
+		.titre {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-top: -1.2vw;
+			position: relative;
+			// left: -85vw;
+			animation: fadeIn 4s;
+			animation-delay: 2s;
+			.bloc {
+				color: $text-color-1;
+				position: relative;
+				left: 3.3vw;
+				top: -2.6vw;
+				h1 {
+					font-family: "Panthera", sans-serif, arial;
+					font-size: 3vw;
+					letter-spacing: 0.3vw;
+					color: $title-color;
+					margin: 0;
+				}
+				h2 {
+					font-family: "BEYNO", sans-serif, arial;
+					font-size: 1.6vw;
+					font-weight: 100;
+					color: $title-color;
+					margin-top: 0.7vw;
+				}
+				p {
+					font-family: "Cantarell", sans-serif, arial;
+					font-size: 0.8vw;
+					font-weight: 500;
+					line-height: 1.1vw;
+					margin-top: 2vw;
+					text-shadow: 0.035vw 0.035vw $text-color-1;
+					span {
+						text-decoration: underline;
+						cursor: pointer;
+					}
+				}
+			}
+
+			div {
+				img {
+					width: 60vw;
+				}
+			}
+		}
+		@keyframes fadeIn {
+			0% {
+				left: -70vw;
+				opacity: 0;
+			}
+			100% {
+				left: 0;
+				opacity: 1;
+			}
+		}
+		.personnage {
+			// width: 91.5%;
+			width: 95.5%;
+			position: relative;
+			// right: -8.05vw;
+			right: -4.18vw;
+			top: -4.5vw;
+			background-color: $bg-personnage-color;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			animation: fadeIn 4s;
+			animation-delay: 2s;
+			.text1 {
+				width: 20.4vw;
+				color: $text-color-1;
+				h3 {
+					margin-left: 1.8vw;
+					margin-bottom: 0.4vw;
+					font-family: "BEYNO", sans-serif, arial;
+					font-size: 1.15vw;
+					color: $title-color;
+				}
+				p {
+					width: 16.6vw;
+					font-family: "Cantarell", sans-serif, arial;
+					font-size: 0.678vw;
+					font-weight: 500;
+					line-height: 1.1vw;
+					text-align: justify;
+					text-shadow: 0.035vw 0.035vw $text-color-1;
+					margin: auto;
+					margin-bottom: 3.5vw;
+					span {
+						text-decoration: underline;
+						cursor: pointer;
+					}
+				}
+			}
+			.pantherhome3 {
+				width: 14.5vw;
+			}
+			.text2 {
+				width: 20.4vw;
+				color: $text-color-1;
+				h3 {
+					margin-left: 1.8vw;
+					margin-bottom: 0.4vw;
+					font-family: "BEYNO", sans-serif, arial;
+					font-size: 1.15vw;
+					color: $title-color;
+				}
+				p {
+					width: 16.6vw;
+					font-family: "Cantarell", sans-serif, arial;
+					font-size: 0.678vw;
+					font-weight: 500;
+					line-height: 1.1vw;
+					text-align: justify;
+					text-shadow: 0.035vw 0.035vw $text-color-1;
+					margin: auto;
+					margin-bottom: 3.5vw;
+					span {
+						text-decoration: underline;
+						cursor: pointer;
+					}
+				}
+			}
+			.pantherhome4 {
+				// width: 10.63vw;
+				width: 14.5vw;
+			}
+			.pantherhome2 {
+				display: block;
+				position: absolute;
+				width: 19vw;
+				left: 2vw;
+				top: -2.5vw;
+			}
+			.next {
+				width: 2.5vw;
+				height: 2.5vw;
+				position: absolute;
+				background-color: $bg-personnage-color;
+				color: $text-color-1;
+				font-size: 1vw;
+				font-weight: bold;
+				text-align: center;
+				line-height: 2.5vw;
+				right: 1.7vw;
+				cursor: pointer;
+				border-radius: 1.25vw;
+				-webkit-border-radius: 1.25vw;
+				-moz-border-radius: 1.25vw;
+				-ms-border-radius: 1.25vw;
+				-o-border-radius: 1.25vw;
+			}
+		}
+		@keyframes fadeIn {
+			0% {
+				left: -70vw;
+				opacity: 0;
+			}
+			100% {
+				left: 0;
+				opacity: 1;
+			}
+		}
+	}
+	main {
+		section {
+			margin-top: 5vw;
+			padding-bottom: 3.5vw;
+			color: $text-color-1;
+			display: flex;
+			.main-text {
+				width: 39.441%;
+				margin-left: 13.6646%;
+				position: relative;
+				animation: fadeIn 4s;
+				animation-delay: 2s;
+				h3 {
+					font-family: "BEYNO", sans-serif, arial;
+					font-size: 1.15vw;
+					color: $title-color;
+				}
+				p {
+					margin: 1.1vw 0;
+					text-align: justify;
+					font-size: 0.678vw;
+					line-height: 1.13vw;
+				}
+				.prince {
+					.p2 {
+						text-align: justify;
+						font-size: 0.679vw;
+						margin-bottom: 1.2vw;
+					}
+					.p3 {
+						text-align: justify;
+						font-size: 0.72vw;
+						margin-bottom: 1.5vw;
+					}
+				}
+				.vengeur {
+					.p4 {
+						text-align: justify;
+						font-size: 0.7vw;
+						margin-bottom: 1.5vw;
+					}
+					.p5 {
+						text-align: justify;
+						font-size: 0.678vw;
+					}
+					.p6 {
+						text-align: justify;
+						font-size: 0.69vw;
+						margin-bottom: 1.8vw;
+					}
+					.p7 {
+						text-align: justify;
+						font-size: 0.72vw;
+						margin-bottom: 1.8vw;
+					}
+				}
+				.justicier {
+					.p8 {
+						text-align: justify;
+						font-size: 0.72vw;
+					}
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					left: -70vw;
+					opacity: 0;
+				}
+				100% {
+					left: 0;
+					opacity: 1;
+				}
+			}
+			.main-image {
+				position: relative;
+				width: 25.1638%;
+				margin-left: 10.24%;
+				margin-right: 11.4906%;
+				animation: fadeIn 4s;
+				animation-delay: 2s;
+				.tchalla {
+					width: 100%;
+					height: 37vw;
+					background-color: $bg-tchalla-color;
+					margin-top: 12vw;
+					padding-top: 13vw;
+					border-radius: 0.47vw;
+					-webkit-border-radius: 0.47vw;
+					-moz-border-radius: 0.47vw;
+					-ms-border-radius: 0.47vw;
+					-o-border-radius: 0.47vw;
+					.identite-tchalla {
+						width: 74%;
+						height: 18vw;
+						margin: auto;
+						font-family: "Cantarell", sans-serif, arial;
+						font-size: 0.83vw;
+						color: $text-color-2;
+						h2 {
+							text-align: center;
+							padding: 1vw;
+						}
+						div {
+							display: flex;
+							justify-content: space-between;
+							button {
+								display: block;
+								padding: 0.3vw 0.5vw;
+								font-size: 0.74vw;
+								background-color: $bg-btn-identite-color;
+								border: none;
+								color: $text-color-1;
+								cursor: pointer;
+								border-radius: 0.3vw;
+								-webkit-border-radius: 0.3vw;
+								-moz-border-radius: 0.3vw;
+								-ms-border-radius: 0.3vw;
+								-o-border-radius: 0.3vw;
+							}
+						}
+						p {
+							margin: 0.29vw 0;
+							span {
+								font-weight: 700;
+								small {
+									font-weight: normal;
+								}
+							}
+						}
+						.identite1 {
+							margin-top: 1.5vw;
+						}
+					}
+				}
+				.pantherhome5 {
+					width: 19.3vw;
+					display: block;
+					position: absolute;
+					top: -1.3vw;
+					left: 2.25vw;
+				}
+				.pantherhome6 {
+					width: 25vw;
+					display: block;
+					margin-top: 6vw;
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					left: -70vw;
+					opacity: 0;
+				}
+				100% {
+					left: 0;
+					opacity: 1;
+				}
+			}
+		}
+		.contact {
+			position: relative;
+			img {
+				display: block;
+				width: 100%;
+			}
+			.raccord {
+				width: 100%;
+				height: 10.5vw;
+				position: absolute;
+				top: 45vw;
+				background-color: #080808f1;
+				// background-image: url("/Assets/Illustrations+Logo/All-pages/arrière_plan.png");
+				background-image: url(/assets/illustration\ et\ logo/.pantherhome4);
+				.boule {
+					width: 6.8vw;
+					height: 6.8vw;
+					background-color: #0217405d;
+					margin-left: 81.5vw;
+					margin-top: 2.4vw;
+					border-radius: 3.4vw;
+					-webkit-border-radius: 3.4vw;
+					-moz-border-radius: 3.4vw;
+					-ms-border-radius: 3.4vw;
+					-o-border-radius: 3.4vw;
+				}
+			}
+			.formulaire {
+				width: 50.5vw;
+				height: 34vw;
+				border-radius: 10vw;
+				background-image: linear-gradient(
+					180deg,
+					rgba(242, 206, 242, 1) 10%,
+					rgba(242, 206, 242, 0.1) 90%
+				);
+				position: absolute;
+				top: 6.4vw;
+				left: 22.3vw;
+				-webkit-border-radius: 10vw;
+				-moz-border-radius: 10vw;
+				-ms-border-radius: 10vw;
+				-o-border-radius: 10vw;
+				form {
+					width: 51%;
+					margin-left: 13.7vw;
+					text-align: center;
+					font-family: "Cantarell", sans-serif, arial;
+					.pfa {
+						margin-top: 3vw;
+						margin-bottom: 0vw;
+						font-size: 0.9vw;
+						font-weight: bold;
+					}
+					.pfb {
+						margin-top: 0vw;
+						margin-bottom: 1.5vw;
+						font-size: 2.4vw;
+						font-weight: bold;
+					}
+					input[type="text"],
+					input[type="email"] {
+						width: 100%;
+						height: 2.8vw;
+						display: block;
+						margin: 0.5vw 0;
+						padding-left: 1.6vw;
+						&::placeholder {
+							color: $text-color-2;
+							font-family: "Cantarell", sans-serif, arial;
+							font-size: 0.8vw;
+						}
+					}
+					textarea {
+						width: 100%;
+						margin-top: 0.8vw;
+						color: $text-color-2;
+						padding-left: 1.6vw;
+						font-family: "Cantarell", sans-serif, arial;
+						font-size: 0.8vw;
+						&::placeholder {
+							color: $text-color-2;
+						}
+					}
+					textarea,
+					input[type="text"],
+					input[type="email"] {
+						border: 1px solid $text-color-2;
+						background-color: transparent;
+						border-radius: 2vw;
+						-webkit-border-radius: 2vw;
+						-moz-border-radius: 2vw;
+						-ms-border-radius: 2vw;
+						-o-border-radius: 2vw;
+					}
+					input[type="submit"] {
+						font-size: 0.7vw;
+						font-weight: 800;
+						padding: 0.6vw 1.8vw;
+						margin-top: 1.1vw;
+						border: none;
+						cursor: pointer;
+						border-radius: 2vw;
+						-webkit-border-radius: 2vw;
+						-moz-border-radius: 2vw;
+						-ms-border-radius: 2vw;
+						-o-border-radius: 2vw;
+						&:hover {
+							filter: drop-shadow(0 0 0.5vw $text-color-1);
+							-webkit-filter: drop-shadow(0 0 0.5vw $text-color-1);
+						}
+					}
+				}
+			}
+		}
+	}
+}

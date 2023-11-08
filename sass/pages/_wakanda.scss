@@ -1,0 +1,121 @@
+.wrapper {
+	background: $bg-wrapper;
+	header {
+		.wakanda-titre {
+			position: relative;
+			animation: fadeIn 4s;
+			animation-delay: 2s;
+			.wakanda-bloc {
+				position: absolute;
+				color: $text-color-1;
+				top: 15vw;
+				left: 10.89vw;
+				h1 {
+					font-family: "BEYNO";
+					font-size: 3vw;
+					letter-spacing: 0.2vw;
+					color: $title-color;
+					margin-bottom: 1vw;
+				}
+				h2 {
+					font-family: "Wakanda forever";
+					font-size: 1.6vw;
+					font-weight: 600;
+					letter-spacing: 0.4vw;
+					word-spacing: 1vw;
+					color: $title-color;
+					margin-bottom: 2.5vw;
+				}
+				p {
+					width: 22.9vw;
+					font-family: "Cantarell";
+					font-size: 0.67vw;
+					font-weight: 500;
+					line-height: 1.1vw;
+					text-align: justify;
+					text-shadow: 0.035vw 0.035vw $text-color-1;
+				}
+			}
+			img {
+				width: 100%;
+			}
+		}
+		@keyframes fadeIn {
+			0% {
+				left: -70vw;
+				opacity: 0;
+			}
+			100% {
+				left: 0;
+				opacity: 1;
+			}
+		}
+	}
+	main {
+		.main-wakanda {
+			background-image: url("/assets/illustration\ et\ logo/2_wakanda_page/Pantherwakanda2a.png");
+			background-repeat: no-repeat;
+			//background-position: top -5vw;
+			background-position-y: top 0;
+			background-size: contain;
+			width: 72.78461538vw;
+			min-height: 100vw;
+			margin: auto;
+			color: $text-main-wakanda-color;
+			display: flex;
+			justify-content: space-between;
+			h3 {
+				font-family: "BEYNO";
+				font-size: 1.15vw;
+				color: $title-color;
+			}
+			p {
+				margin: 1.1vw 0;
+				text-align: justify;
+				font-size: 0.678vw;
+				line-height: 1.13vw;
+			}
+			.main-wakanda1 {
+				width: 31.86153846vw;
+				position: relative;
+				top: 9vw;
+				animation: fadeIn 4s;
+				animation-delay: 2s;
+				iframe {
+					height: 14.5vw;
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					left: -70vw;
+					opacity: 0;
+				}
+				100% {
+					left: 0;
+					opacity: 1;
+				}
+			}
+			.main-wakanda2 {
+				width: 32.73846153vw;
+				position: relative;
+				top: 9vw;
+				animation: fadeIn 4s;
+				animation-delay: 2s;
+				img {
+					display: block;
+					width: 32vw;
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					left: -70vw;
+					opacity: 0;
+				}
+				100% {
+					left: 0;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
