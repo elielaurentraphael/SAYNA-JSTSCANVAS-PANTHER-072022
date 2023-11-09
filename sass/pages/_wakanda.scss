@@ -40,26 +40,15 @@
 				width: 100%;
 			}
 		}
-		// @keyframes fadeIn {
-		// 	0% {
-		// 		left: -70vw;
-		// 		opacity: 0;
-		// 	}
-		// 	100% {
-		// 		left: 0;
-		// 		opacity: 1;
-		// 	}
-		// }
 	}
 	main {
 		.main-wakanda {
 			background-image: url("/assets/illustration\ et\ logo/2_wakanda_page/Pantherwakanda2a.png");
 			background-repeat: no-repeat;
-			//background-position: top -5vw;
 			background-position-y: top 0;
 			background-size: contain;
 			width: 72.78461538vw;
-			min-height: 100vw;
+			min-height: 120vw;
 			margin: auto;
 			color: $text-main-wakanda-color;
 			display: flex;
@@ -85,16 +74,6 @@
 					height: 14.5vw;
 				}
 			}
-			// @keyframes fadeIn {
-			// 	0% {
-			// 		left: -70vw;
-			// 		opacity: 0;
-			// 	}
-			// 	100% {
-			// 		left: 0;
-			// 		opacity: 1;
-			// 	}
-			// }
 			.main-wakanda2 {
 				width: 32.73846153vw;
 				position: relative;
@@ -106,16 +85,6 @@
 					width: 32vw;
 				}
 			}
-			// @keyframes fadeIn {
-			// 	0% {
-			// 		left: -70vw;
-			// 		opacity: 0;
-			// 	}
-			// 	100% {
-			// 		left: 0;
-			// 		opacity: 1;
-			// 	}
-			// }
 		}
 	}
 }

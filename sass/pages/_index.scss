@@ -7,7 +7,6 @@
 			justify-content: flex-end;
 			margin-top: -1.2vw;
 			position: relative;
-			// left: -85vw;
 			animation: fadeIn 4s;
 			animation-delay: 2s;
 			.bloc {
@@ -49,21 +48,10 @@
 				}
 			}
 		}
-		// @keyframes fadeIn {
-		// 	0% {
-		// 		left: -70vw;
-		// 		opacity: 0;
-		// 	}
-		// 	100% {
-		// 		left: 0;
-		// 		opacity: 1;
-		// 	}
-		// }
+
 		.personnage {
-			// width: 91.5%;
 			width: 95.5%;
 			position: relative;
-			// right: -8.05vw;
 			right: -4.18vw;
 			top: -4.5vw;
 			background-color: $bg-personnage-color;
@@ -128,7 +116,6 @@
 				}
 			}
 			.pantherhome4 {
-				// width: 10.63vw;
 				width: 14.5vw;
 			}
 			.pantherhome2 {
@@ -157,17 +144,8 @@
 				-o-border-radius: 1.25vw;
 			}
 		}
-		// @keyframes fadeIn {
-		// 	0% {
-		// 		left: -70vw;
-		// 		opacity: 0;
-		// 	}
-		// 	100% {
-		// 		left: 0;
-		// 		opacity: 1;
-		// 	}
-		// }
 	}
+
 	main {
 		section {
 			margin-top: 5vw;
@@ -231,16 +209,7 @@
 					}
 				}
 			}
-			// @keyframes fadeIn {
-			// 	0% {
-			// 		left: -70vw;
-			// 		opacity: 0;
-			// 	}
-			// 	100% {
-			// 		left: 0;
-			// 		opacity: 1;
-			// 	}
-			// }
+
 			.main-image {
 				position: relative;
 				width: 25.1638%;
@@ -315,17 +284,8 @@
 					margin-top: 6vw;
 				}
 			}
-			// @keyframes fadeIn {
-			// 	0% {
-			// 		left: -70vw;
-			// 		opacity: 0;
-			// 	}
-			// 	100% {
-			// 		left: 0;
-			// 		opacity: 1;
-			// 	}
-			// }
 		}
+
 		.contact {
 			position: relative;
 			img {
@@ -338,7 +298,6 @@
 				position: absolute;
 				top: 45vw;
 				background-color: #080808f1;
-				// background-image: url("/Assets/Illustrations+Logo/All-pages/arrière_plan.png");
 				background-image: url(/assets/illustration\ et\ logo/.pantherhome4);
 				.boule {
 					width: 6.8vw;
@@ -393,10 +352,11 @@
 						display: block;
 						margin: 0.5vw 0;
 						padding-left: 1.6vw;
+						font-size: 1.7vw;
 						&::placeholder {
 							color: $text-color-2;
 							font-family: "Cantarell", sans-serif, arial;
-							font-size: 0.8vw;
+							font-size: 1.7vw;
 						}
 					}
 					textarea {
@@ -405,14 +365,16 @@
 						color: $text-color-2;
 						padding-left: 1.6vw;
 						font-family: "Cantarell", sans-serif, arial;
-						font-size: 0.8vw;
+						font-size: 1.2vw;
 						&::placeholder {
 							color: $text-color-2;
+							font-size: 1.2vw;
 						}
 					}
 					textarea,
 					input[type="text"],
 					input[type="email"] {
+						outline: none;
 						border: 1px solid $text-color-2;
 						background-color: transparent;
 						border-radius: 2vw;

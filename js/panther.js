@@ -1,5 +1,7 @@
 // APPARITON PROGRESSIVE DES ELEMENTS AVEC FADEIN ET SLIDE
 
+// création d'une class .fadeInSlideScroll et attribution de cette class à tous les éléments qu'on veut animer à l'ouverture d'une page (web) avec "fade in" et "slide" suivant le "scroll"
+
 // cibler toutes les class .fadeInSlideScroll pour l'apparition progressif des éléments avec fade-In + slide
 const fadeInSlideScrollElements =
 	document.querySelectorAll(".fadeInSlideScroll");
@@ -28,8 +30,6 @@ function handleScrollFadeSlide() {
 
 // gerer l'événement de défilement et l'apparition progressive
 window.addEventListener("scroll", handleScrollFadeSlide);
-
-console.log("Salut !");
 
 // Appel de la fonction handleScrollFadeSlide
 handleScrollFadeSlide();

@@ -2,11 +2,11 @@
 .fadeInSlideScroll {
   opacity: 0;
   visibility: hidden;
-  transform: translateX(-30vw);
-  -webkit-transform: translateX(-30vw);
-  -moz-transform: translateX(-30vw);
-  -ms-transform: translateX(-30vw);
-  -o-transform: translateX(-30vw);
+  transform: translateX(-80vw);
+  -webkit-transform: translateX(-80vw);
+  -moz-transform: translateX(-80vw);
+  -ms-transform: translateX(-80vw);
+  -o-transform: translateX(-80vw);
 }
 
 * {
@@ -20,6 +20,22 @@ body {
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: "BEYNO";
+  src: url(/fonts/beyno-regular.otf);
+}
+@font-face {
+  font-family: "Cantarell";
+  src: url(/fonts/Cantarell-Regular.ttf);
+}
+@font-face {
+  font-family: "Panthera";
+  src: url(/fonts/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+  font-family: "Wakanda forever";
+  src: url(/fonts/WakandaForever-Regular.ttf);
+}
 nav {
   display: flex;
   align-items: center;
@@ -621,12 +637,13 @@ footer .b .h {
   display: block;
   margin: 0.5vw 0;
   padding-left: 1.6vw;
+  font-size: 1.7vw;
 }
 .wrapper main .contact .formulaire form input[type=text]::placeholder,
 .wrapper main .contact .formulaire form input[type=email]::placeholder {
   color: #000;
   font-family: "Cantarell", sans-serif, arial;
-  font-size: 0.8vw;
+  font-size: 1.7vw;
 }
 .wrapper main .contact .formulaire form textarea {
   width: 100%;
@@ -634,14 +651,16 @@ footer .b .h {
   color: #000;
   padding-left: 1.6vw;
   font-family: "Cantarell", sans-serif, arial;
-  font-size: 0.8vw;
+  font-size: 1.2vw;
 }
 .wrapper main .contact .formulaire form textarea::placeholder {
   color: #000;
+  font-size: 1.2vw;
 }
 .wrapper main .contact .formulaire form textarea,
 .wrapper main .contact .formulaire form input[type=text],
 .wrapper main .contact .formulaire form input[type=email] {
+  outline: none;
   border: 1px solid #000;
   background-color: transparent;
   border-radius: 2vw;
@@ -716,7 +735,7 @@ footer .b .h {
   background-position-y: top 0;
   background-size: contain;
   width: 72.78461538vw;
-  min-height: 100vw;
+  min-height: 120vw;
   margin: auto;
   color: #f2cef2;
   display: flex;
@@ -762,22 +781,22 @@ footer .b .h {
   animation: fadeIn 4s;
   animation-delay: 2s;
 }
-.wrapper main .main-enigme .image {
+.wrapper main .main-enigme .image-0 .image {
   position: absolute;
   top: 0;
 }
-.wrapper main .main-enigme .image img {
+.wrapper main .main-enigme .image-0 .image img {
   width: 56vw;
 }
-.wrapper main .main-enigme .enigme-title {
+.wrapper main .main-enigme .image-0 .enigme-title {
   color: #9e91b7;
   position: relative;
   top: 10.5vw;
   left: 55vw;
   width: 33vw;
 }
-.wrapper main .main-enigme .enigme-title .title1,
-.wrapper main .main-enigme .enigme-title .title2 {
+.wrapper main .main-enigme .image-0 .enigme-title .title1,
+.wrapper main .main-enigme .image-0 .enigme-title .title2 {
   width: 31vw;
   margin: 0;
   font-family: "BEYNO";
@@ -785,7 +804,7 @@ footer .b .h {
   font-weight: 400;
   text-align: justify;
 }
-.wrapper main .main-enigme .enigme-title .title1 {
+.wrapper main .main-enigme .image-0 .enigme-title .title1 {
   letter-spacing: 0.1vw;
   word-spacing: 0.9vw;
 }
@@ -793,7 +812,7 @@ footer .b .h {
   position: relative;
   top: 12.5vw;
   left: 53.7vw;
-  width: 43vw;
+  width: 40vw;
   margin: 0;
 }
 .wrapper main .main-enigme .dora-milaje .pantherenigme2 {
@@ -801,8 +820,7 @@ footer .b .h {
 }
 .wrapper main .main-enigme .dora-milaje p {
   width: 25.4vw;
-  font-family: "BEYNO";
-  font-size: 0.678vw;
+  font-size: 0.675vw;
   line-height: 1vw;
   text-align: justify;
   position: absolute;
@@ -810,14 +828,14 @@ footer .b .h {
   left: 6.6vw;
 }
 .wrapper main .main-enigme .dora-milaje .pantherenigme3 {
-  width: 42vw;
+  width: 2vw;
   position: absolute;
-  top: 22vw;
-  left: 1.8vw;
+  top: 23vw;
+  left: 17vw;
 }
 .wrapper main .main-enigme .glyphes {
   width: 50vw;
-  font-family: "Wakanda 4 Ever";
+  font-family: "Wakanda forever";
   letter-spacing: 0.54vw;
   line-height: 2vw;
   font-weight: 100;
@@ -826,26 +844,28 @@ footer .b .h {
   top: 20vw;
   left: 14.5vw;
 }
-.wrapper main .main-enigme .transcription {
-  width: 50vw;
-  position: relative;
-  top: 23.5vw;
-  left: 14.5vw;
-  font-size: 0.7vw;
-  letter-spacing: 0.1vw;
+.wrapper main .main-enigme .glyphes h3 {
+  font-family: "BEYNO";
+  font-size: 1.2vw;
+  letter-spacing: 0.2vw;
+  padding-bottom: 0.5vw;
+  text-decoration: underline;
 }
-.wrapper main .main-enigme .transcription span {
-  display: inline-block;
-  font-size: 0.68vw;
-  margin-bottom: 1vw;
-  letter-spacing: 0.02vw;
-  word-spacing: 0.02vw;
+.wrapper main .main-enigme .glyphes h3 span {
+  font-family: "Cantarell";
+}
+.wrapper main .main-enigme .glyphes p {
+  font-family: "Cantarell";
+  font-size: 0.65vw;
+  letter-spacing: 0.07vw;
+  line-height: 1vw;
+  margin-bottom: 2.5vw;
 }
 .wrapper main .main-enigme .lettre-e {
   width: 40vw;
   position: relative;
-  top: 18vw;
-  left: 49vw;
+  top: 7vw;
+  left: 53vw;
 }
 .wrapper main .main-enigme .lettre-e img {
   width: 38.5vw;
@@ -854,20 +874,22 @@ footer .b .h {
   width: 26vw;
   font-family: "Cantarell";
   font-size: 0.65vw;
-  text-align: center;
   position: absolute;
-  top: 6.3vw;
+  top: 9.3vw;
   left: 7vw;
 }
 .wrapper main .main-enigme .lettre-e p span {
   display: block;
-  margin: 1.3vw;
+  margin: 0;
+}
+.wrapper main .main-enigme .lettre-e p em {
+  font-family: "Wakanda forever";
 }
 .wrapper main .main-enigme .formulaire {
   width: 25.3vw;
   font-size: 0.68vw;
   position: relative;
-  top: 7vw;
+  top: 2vw;
   left: 14.5vw;
 }
 .wrapper main .main-enigme .formulaire label,
