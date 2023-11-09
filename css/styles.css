@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.fadeInSlideScroll {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-30vw);
+  -webkit-transform: translateX(-30vw);
+  -moz-transform: translateX(-30vw);
+  -ms-transform: translateX(-30vw);
+  -o-transform: translateX(-30vw);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -320,16 +330,6 @@ footer .b .h {
 .wrapper header .titre div img {
   width: 60vw;
 }
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
 .wrapper header .personnage {
   width: 95.5%;
   position: relative;
@@ -425,16 +425,6 @@ footer .b .h {
   -ms-border-radius: 1.25vw;
   -o-border-radius: 1.25vw;
 }
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
 .wrapper main section {
   margin-top: 5vw;
   padding-bottom: 3.5vw;
@@ -491,16 +481,6 @@ footer .b .h {
 .wrapper main section .main-text .justicier .p8 {
   text-align: justify;
   font-size: 0.72vw;
-}
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
 }
 .wrapper main section .main-image {
   position: relative;
@@ -575,16 +555,6 @@ footer .b .h {
   width: 25vw;
   display: block;
   margin-top: 6vw;
-}
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
 }
 .wrapper main .contact {
   position: relative;
@@ -740,16 +710,6 @@ footer .b .h {
 .wrapper header .wakanda-titre img {
   width: 100%;
 }
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
 .wrapper main .main-wakanda {
   background-image: url("/assets/illustration et logo/2_wakanda_page/Pantherwakanda2a.png");
   background-repeat: no-repeat;
@@ -783,16 +743,6 @@ footer .b .h {
 .wrapper main .main-wakanda .main-wakanda1 iframe {
   height: 14.5vw;
 }
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
 .wrapper main .main-wakanda .main-wakanda2 {
   width: 32.73846153vw;
   position: relative;
@@ -803,16 +753,6 @@ footer .b .h {
 .wrapper main .main-wakanda .main-wakanda2 img {
   display: block;
   width: 32vw;
-}
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
 }
 
 .wrapper main .main-enigme {
@@ -972,16 +912,6 @@ footer .b .h {
 .wrapper main .main-enigme .formulaire input[type=submit]:hover {
   filter: drop-shadow(0 0 0.5vw #f2cef2);
   -webkit-filter: drop-shadow(0 0 0.5vw #f2cef2);
-}
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

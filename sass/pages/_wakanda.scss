@@ -40,16 +40,16 @@
 				width: 100%;
 			}
 		}
-		@keyframes fadeIn {
-			0% {
-				left: -70vw;
-				opacity: 0;
-			}
-			100% {
-				left: 0;
-				opacity: 1;
-			}
-		}
+		// @keyframes fadeIn {
+		// 	0% {
+		// 		left: -70vw;
+		// 		opacity: 0;
+		// 	}
+		// 	100% {
+		// 		left: 0;
+		// 		opacity: 1;
+		// 	}
+		// }
 	}
 	main {
 		.main-wakanda {
@@ -85,16 +85,16 @@
 					height: 14.5vw;
 				}
 			}
-			@keyframes fadeIn {
-				0% {
-					left: -70vw;
-					opacity: 0;
-				}
-				100% {
-					left: 0;
-					opacity: 1;
-				}
-			}
+			// @keyframes fadeIn {
+			// 	0% {
+			// 		left: -70vw;
+			// 		opacity: 0;
+			// 	}
+			// 	100% {
+			// 		left: 0;
+			// 		opacity: 1;
+			// 	}
+			// }
 			.main-wakanda2 {
 				width: 32.73846153vw;
 				position: relative;
@@ -106,16 +106,16 @@
 					width: 32vw;
 				}
 			}
-			@keyframes fadeIn {
-				0% {
-					left: -70vw;
-					opacity: 0;
-				}
-				100% {
-					left: 0;
-					opacity: 1;
-				}
-			}
+			// @keyframes fadeIn {
+			// 	0% {
+			// 		left: -70vw;
+			// 		opacity: 0;
+			// 	}
+			// 	100% {
+			// 		left: 0;
+			// 		opacity: 1;
+			// 	}
+			// }
 		}
 	}
 }

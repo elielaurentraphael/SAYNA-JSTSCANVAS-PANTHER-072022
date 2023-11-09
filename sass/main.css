@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.fadeInSlideScroll {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-30vw);
+  -webkit-transform: translateX(-30vw);
+  -moz-transform: translateX(-30vw);
+  -ms-transform: translateX(-30vw);
+  -o-transform: translateX(-30vw);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -211,6 +221,39 @@ footer .b .h {
   font-size: 0.8vw;
 }
 
+/* .lateral-out {
+	position: fixed;
+	width: 1.4vw;
+	left: 4.7vw;
+	top: 0;
+	z-index: 2;
+	.lateral-in1 {
+		width: 100%;
+		height: 17.5vw;
+		border-left: 0.25vw solid $title-color;
+		border-right: 0.25vw solid $title-color;
+	}
+	.lateral-in2 {
+		width: 100%;
+		height: 8.6vw;
+		padding-top: 0.6vw;
+		padding-left: 0.5vw;
+		border-left: 0.25vw solid $title-color;
+		img {
+			display: block;
+			width: 1.3vw;
+			padding-bottom: 1vw;
+			cursor: pointer;
+			&:hover {
+				filter: invert(100%) sepia(1%) saturate(3600%) hue-rotate(149deg)
+					brightness(200%) contrast(100%);
+				-webkit-filter: invert(100%) sepia(1%) saturate(3600%)
+					hue-rotate(149deg) brightness(200%) contrast(100%);
+			}
+		}
+	}
+}
+ */
 .lateral-out {
   position: fixed;
   width: 1.4vw;
@@ -281,64 +324,15 @@ footer .b .h {
   font-size: 0.8vw;
   font-weight: 500;
   line-height: 1.1vw;
+  margin-top: 2vw;
   text-shadow: 0.035vw 0.035vw #fff;
 }
 .wrapper header .titre .bloc p span {
   text-decoration: underline;
   cursor: pointer;
 }
-.wrapper header .titre .bloc .lateral-out {
-  position: fixed;
-  width: 1.4vw;
-  left: 4.7vw;
-  top: 0;
-  z-index: 2;
-}
-.wrapper header .titre .bloc .lateral-out .lateral-in1 {
-  width: 100%;
-  height: 17.5vw;
-  border-left: 0.25vw solid #9e91b7;
-  border-right: 0.25vw solid #9e91b7;
-}
-.wrapper header .titre .bloc .lateral-out .lateral-in2 {
-  width: 100%;
-  height: 8.6vw;
-  padding-top: 0.6vw;
-  padding-left: 0.5vw;
-  border-left: 0.25vw solid #9e91b7;
-}
-.wrapper header .titre .bloc .lateral-out .lateral-in2 img {
-  display: block;
-  width: 1.3vw;
-  padding-bottom: 1vw;
-  cursor: pointer;
-}
-.wrapper header .titre .bloc .lateral-out .lateral-in2 img:hover {
-  filter: invert(100%) sepia(1%) saturate(3600%) hue-rotate(149deg) brightness(200%) contrast(100%);
-  -webkit-filter: invert(100%) sepia(1%) saturate(3600%) hue-rotate(149deg) brightness(200%) contrast(100%);
-}
 .wrapper header .titre div img {
   width: 60vw;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
 }
 .wrapper header .personnage {
   width: 95.5%;
@@ -437,24 +431,13 @@ footer .b .h {
   -ms-border-radius: 1.25vw;
   -o-border-radius: 1.25vw;
 }
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-
-main section {
+.wrapper main section {
   margin-top: 5vw;
   padding-bottom: 3.5vw;
   color: #fff;
   display: flex;
 }
-main section .main-text {
+.wrapper main section .main-text {
   width: 39.441%;
   margin-left: 13.6646%;
   position: relative;
@@ -463,61 +446,51 @@ main section .main-text {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-main section .main-text h3 {
+.wrapper main section .main-text h3 {
   font-family: "BEYNO", sans-serif, arial;
   font-size: 1.15vw;
   color: #9e91b7;
 }
-main section .main-text p {
+.wrapper main section .main-text p {
   margin: 1.1vw 0;
   text-align: justify;
   font-size: 0.678vw;
   line-height: 1.13vw;
 }
-main section .main-text .prince .p2 {
+.wrapper main section .main-text .prince .p2 {
   text-align: justify;
   font-size: 0.679vw;
   margin-bottom: 1.2vw;
 }
-main section .main-text .prince .p3 {
+.wrapper main section .main-text .prince .p3 {
   text-align: justify;
   font-size: 0.72vw;
   margin-bottom: 1.5vw;
 }
-main section .main-text .vengeur .p4 {
+.wrapper main section .main-text .vengeur .p4 {
   text-align: justify;
   font-size: 0.7vw;
   margin-bottom: 1.5vw;
 }
-main section .main-text .vengeur .p5 {
+.wrapper main section .main-text .vengeur .p5 {
   text-align: justify;
   font-size: 0.678vw;
 }
-main section .main-text .vengeur .p6 {
+.wrapper main section .main-text .vengeur .p6 {
   text-align: justify;
   font-size: 0.69vw;
   margin-bottom: 1.8vw;
 }
-main section .main-text .vengeur .p7 {
+.wrapper main section .main-text .vengeur .p7 {
   text-align: justify;
   font-size: 0.72vw;
   margin-bottom: 1.8vw;
 }
-main section .main-text .justicier .p8 {
+.wrapper main section .main-text .justicier .p8 {
   text-align: justify;
   font-size: 0.72vw;
 }
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-main section .main-image {
+.wrapper main section .main-image {
   position: relative;
   width: 25.1638%;
   margin-left: 10.24%;
@@ -527,7 +500,7 @@ main section .main-image {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-main section .main-image .tchalla {
+.wrapper main section .main-image .tchalla {
   width: 100%;
   height: 37vw;
   background-color: #fff;
@@ -539,7 +512,7 @@ main section .main-image .tchalla {
   -ms-border-radius: 0.47vw;
   -o-border-radius: 0.47vw;
 }
-main section .main-image .tchalla .identite-tchalla {
+.wrapper main section .main-image .tchalla .identite-tchalla {
   width: 74%;
   height: 18vw;
   margin: auto;
@@ -547,14 +520,15 @@ main section .main-image .tchalla .identite-tchalla {
   font-size: 0.83vw;
   color: #000;
 }
-main section .main-image .tchalla .identite-tchalla h2 {
+.wrapper main section .main-image .tchalla .identite-tchalla h2 {
   text-align: center;
+  padding: 1vw;
 }
-main section .main-image .tchalla .identite-tchalla div {
+.wrapper main section .main-image .tchalla .identite-tchalla div {
   display: flex;
   justify-content: space-between;
 }
-main section .main-image .tchalla .identite-tchalla div button {
+.wrapper main section .main-image .tchalla .identite-tchalla div button {
   display: block;
   padding: 0.3vw 0.5vw;
   font-size: 0.74vw;
@@ -568,48 +542,38 @@ main section .main-image .tchalla .identite-tchalla div button {
   -ms-border-radius: 0.3vw;
   -o-border-radius: 0.3vw;
 }
-main section .main-image .tchalla .identite-tchalla p {
+.wrapper main section .main-image .tchalla .identite-tchalla p {
   margin: 0.29vw 0;
 }
-main section .main-image .tchalla .identite-tchalla p span {
+.wrapper main section .main-image .tchalla .identite-tchalla p span {
   font-weight: 700;
 }
-main section .main-image .tchalla .identite-tchalla p span small {
+.wrapper main section .main-image .tchalla .identite-tchalla p span small {
   font-weight: normal;
 }
-main section .main-image .tchalla .identite-tchalla .identite1 {
+.wrapper main section .main-image .tchalla .identite-tchalla .identite1 {
   margin-top: 1.5vw;
 }
-main section .main-image .pantherhome5 {
+.wrapper main section .main-image .pantherhome5 {
   width: 19.3vw;
   display: block;
   position: absolute;
   top: -1.3vw;
   left: 2.25vw;
 }
-main section .main-image .pantherhome6 {
+.wrapper main section .main-image .pantherhome6 {
   width: 25vw;
   display: block;
   margin-top: 6vw;
 }
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-main .contact {
+.wrapper main .contact {
   position: relative;
 }
-main .contact img {
+.wrapper main .contact img {
   display: block;
   width: 100%;
 }
-main .contact .raccord {
+.wrapper main .contact .raccord {
   width: 100%;
   height: 10.5vw;
   position: absolute;
@@ -617,7 +581,7 @@ main .contact .raccord {
   background-color: rgba(8, 8, 8, 0.9450980392);
   background-image: url(/assets/illustration\ et\ logo/.pantherhome4);
 }
-main .contact .raccord .boule {
+.wrapper main .contact .raccord .boule {
   width: 6.8vw;
   height: 6.8vw;
   background-color: rgba(2, 23, 64, 0.3647058824);
@@ -629,7 +593,7 @@ main .contact .raccord .boule {
   -ms-border-radius: 3.4vw;
   -o-border-radius: 3.4vw;
 }
-main .contact .formulaire {
+.wrapper main .contact .formulaire {
   width: 50.5vw;
   height: 34vw;
   border-radius: 10vw;
@@ -642,44 +606,44 @@ main .contact .formulaire {
   -ms-border-radius: 10vw;
   -o-border-radius: 10vw;
 }
-main .contact .formulaire form {
+.wrapper main .contact .formulaire form {
   width: 51%;
   margin-left: 13.7vw;
   text-align: center;
   font-family: "Cantarell", sans-serif, arial;
 }
-main .contact .formulaire form .pfa {
+.wrapper main .contact .formulaire form .pfa {
   margin-top: 3vw;
   margin-bottom: 0vw;
   font-size: 0.9vw;
   font-weight: bold;
 }
-main .contact .formulaire form .pfb {
+.wrapper main .contact .formulaire form .pfb {
   margin-top: 0vw;
   margin-bottom: 1.5vw;
   font-size: 2.4vw;
   font-weight: bold;
 }
-main .contact .formulaire form input[type=text],
-main .contact .formulaire form input[type=email] {
+.wrapper main .contact .formulaire form input[type=text],
+.wrapper main .contact .formulaire form input[type=email] {
   width: 100%;
   height: 2.8vw;
   display: block;
   margin: 0.5vw 0;
   padding-left: 1.6vw;
 }
-main .contact .formulaire form input[type=text]::-moz-placeholder, main .contact .formulaire form input[type=email]::-moz-placeholder {
+.wrapper main .contact .formulaire form input[type=text]::-moz-placeholder, .wrapper main .contact .formulaire form input[type=email]::-moz-placeholder {
   color: #000;
   font-family: "Cantarell", sans-serif, arial;
   font-size: 0.8vw;
 }
-main .contact .formulaire form input[type=text]::placeholder,
-main .contact .formulaire form input[type=email]::placeholder {
+.wrapper main .contact .formulaire form input[type=text]::placeholder,
+.wrapper main .contact .formulaire form input[type=email]::placeholder {
   color: #000;
   font-family: "Cantarell", sans-serif, arial;
   font-size: 0.8vw;
 }
-main .contact .formulaire form textarea {
+.wrapper main .contact .formulaire form textarea {
   width: 100%;
   margin-top: 0.8vw;
   color: #000;
@@ -687,15 +651,15 @@ main .contact .formulaire form textarea {
   font-family: "Cantarell", sans-serif, arial;
   font-size: 0.8vw;
 }
-main .contact .formulaire form textarea::-moz-placeholder {
+.wrapper main .contact .formulaire form textarea::-moz-placeholder {
   color: #000;
 }
-main .contact .formulaire form textarea::placeholder {
+.wrapper main .contact .formulaire form textarea::placeholder {
   color: #000;
 }
-main .contact .formulaire form textarea,
-main .contact .formulaire form input[type=text],
-main .contact .formulaire form input[type=email] {
+.wrapper main .contact .formulaire form textarea,
+.wrapper main .contact .formulaire form input[type=text],
+.wrapper main .contact .formulaire form input[type=email] {
   border: 1px solid #000;
   background-color: transparent;
   border-radius: 2vw;
@@ -704,7 +668,7 @@ main .contact .formulaire form input[type=email] {
   -ms-border-radius: 2vw;
   -o-border-radius: 2vw;
 }
-main .contact .formulaire form input[type=submit] {
+.wrapper main .contact .formulaire form input[type=submit] {
   font-size: 0.7vw;
   font-weight: 800;
   padding: 0.6vw 1.8vw;
@@ -717,7 +681,7 @@ main .contact .formulaire form input[type=submit] {
   -ms-border-radius: 2vw;
   -o-border-radius: 2vw;
 }
-main .contact .formulaire form input[type=submit]:hover {
+.wrapper main .contact .formulaire form input[type=submit]:hover {
   filter: drop-shadow(0 0 0.5vw #fff);
   -webkit-filter: drop-shadow(0 0 0.5vw #fff);
 }
@@ -735,20 +699,24 @@ main .contact .formulaire form input[type=submit]:hover {
 .wrapper header .wakanda-titre .wakanda-bloc {
   position: absolute;
   color: #fff;
-  top: 13.5vw;
+  top: 15vw;
   left: 10.89vw;
 }
 .wrapper header .wakanda-titre .wakanda-bloc h1 {
   font-family: "BEYNO";
   font-size: 3vw;
-  letter-spacing: 0.3vw;
+  letter-spacing: 0.2vw;
   color: #9e91b7;
+  margin-bottom: 1vw;
 }
 .wrapper header .wakanda-titre .wakanda-bloc h2 {
   font-family: "Wakanda forever";
   font-size: 1.6vw;
-  font-weight: 100;
+  font-weight: 600;
+  letter-spacing: 0.4vw;
+  word-spacing: 1vw;
   color: #9e91b7;
+  margin-bottom: 2.5vw;
 }
 .wrapper header .wakanda-titre .wakanda-bloc p {
   width: 22.9vw;
@@ -761,16 +729,6 @@ main .contact .formulaire form input[type=submit]:hover {
 }
 .wrapper header .wakanda-titre img {
   width: 100%;
-}
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
 }
 .wrapper main .main-wakanda {
   background-image: url("/assets/illustration et logo/2_wakanda_page/Pantherwakanda2a.png");
@@ -807,16 +765,6 @@ main .contact .formulaire form input[type=submit]:hover {
 .wrapper main .main-wakanda .main-wakanda1 iframe {
   height: 14.5vw;
 }
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
 .wrapper main .main-wakanda .main-wakanda2 {
   width: 32.73846153vw;
   position: relative;
@@ -830,35 +778,28 @@ main .contact .formulaire form input[type=submit]:hover {
   display: block;
   width: 32vw;
 }
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
 
 .wrapper main .main-enigme {
   color: blanchedalmond;
-  height: 90.9vw;
-  background-image: url("/Assets/Illustrations+Logo/Enigme/Pantherenigme1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top -19vw left -5vw;
+  height: 100.9vw;
   position: relative;
   -webkit-animation: fadeIn 4s;
           animation: fadeIn 4s;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
+.wrapper main .main-enigme .image {
+  position: absolute;
+  top: 0;
+}
+.wrapper main .main-enigme .image img {
+  width: 56vw;
+}
 .wrapper main .main-enigme .enigme-title {
   color: #9e91b7;
   position: relative;
   top: 10.5vw;
-  left: 52vw;
+  left: 55vw;
   width: 33vw;
 }
 .wrapper main .main-enigme .enigme-title .title1,
@@ -872,30 +813,27 @@ main .contact .formulaire form input[type=submit]:hover {
 }
 .wrapper main .main-enigme .enigme-title .title1 {
   letter-spacing: 0.1vw;
-  word-spacing: 1.5vw;
-}
-.wrapper main .main-enigme .enigme-title .title2 {
-  letter-spacing: 0.05vw;
-  word-spacing: 0.01vw;
+  word-spacing: 0.9vw;
 }
 .wrapper main .main-enigme .dora-milaje {
   position: relative;
   top: 12.5vw;
-  left: 50.7vw;
+  left: 53.7vw;
   width: 43vw;
   margin: 0;
 }
 .wrapper main .main-enigme .dora-milaje .pantherenigme2 {
-  width: 38.5vw;
+  width: 48.5vw;
 }
 .wrapper main .main-enigme .dora-milaje p {
-  width: 26vw;
-  font-family: "Cantarell";
+  width: 25.4vw;
+  font-family: "BEYNO";
   font-size: 0.678vw;
+  line-height: 1vw;
   text-align: justify;
   position: absolute;
-  top: 7.5vw;
-  left: 7.4vw;
+  top: 14.5vw;
+  left: 6.6vw;
 }
 .wrapper main .main-enigme .dora-milaje .pantherenigme3 {
   width: 42vw;
@@ -1006,15 +944,5 @@ main .contact .formulaire form input[type=submit]:hover {
 .wrapper main .main-enigme .formulaire input[type=submit]:hover {
   filter: drop-shadow(0 0 0.5vw #f2cef2);
   -webkit-filter: drop-shadow(0 0 0.5vw #f2cef2);
-}
-@keyframes fadeIn {
-  0% {
-    left: -70vw;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
 }
 /*# sourceMappingURL=main.css.map */
