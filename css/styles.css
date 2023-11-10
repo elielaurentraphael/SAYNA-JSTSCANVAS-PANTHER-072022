@@ -2,7 +2,7 @@
 .fadeInSlideScroll {
   opacity: 0;
   visibility: hidden;
-  transform: translateX(-80vw);
+  transform: translateX(-50vw);
   -webkit-transform: translateX(-80vw);
   -moz-transform: translateX(-80vw);
   -ms-transform: translateX(-80vw);
@@ -235,39 +235,6 @@ footer .b .h {
   font-size: 0.8vw;
 }
 
-/* .lateral-out {
-	position: fixed;
-	width: 1.4vw;
-	left: 4.7vw;
-	top: 0;
-	z-index: 2;
-	.lateral-in1 {
-		width: 100%;
-		height: 17.5vw;
-		border-left: 0.25vw solid $title-color;
-		border-right: 0.25vw solid $title-color;
-	}
-	.lateral-in2 {
-		width: 100%;
-		height: 8.6vw;
-		padding-top: 0.6vw;
-		padding-left: 0.5vw;
-		border-left: 0.25vw solid $title-color;
-		img {
-			display: block;
-			width: 1.3vw;
-			padding-bottom: 1vw;
-			cursor: pointer;
-			&:hover {
-				filter: invert(100%) sepia(1%) saturate(3600%) hue-rotate(149deg)
-					brightness(200%) contrast(100%);
-				-webkit-filter: invert(100%) sepia(1%) saturate(3600%)
-					hue-rotate(149deg) brightness(200%) contrast(100%);
-			}
-		}
-	}
-}
- */
 .lateral-out {
   position: fixed;
   width: 1.4vw;
@@ -585,7 +552,6 @@ footer .b .h {
   position: absolute;
   top: 45vw;
   background-color: rgba(8, 8, 8, 0.9450980392);
-  background-image: url(/assets/illustration\ et\ logo/.pantherhome4);
 }
 .wrapper main .contact .raccord .boule {
   width: 6.8vw;
@@ -692,8 +658,6 @@ footer .b .h {
 }
 .wrapper header .wakanda-titre {
   position: relative;
-  animation: fadeIn 4s;
-  animation-delay: 2s;
 }
 .wrapper header .wakanda-titre .wakanda-bloc {
   position: absolute;
@@ -756,8 +720,6 @@ footer .b .h {
   width: 31.86153846vw;
   position: relative;
   top: 9vw;
-  animation: fadeIn 4s;
-  animation-delay: 2s;
 }
 .wrapper main .main-wakanda .main-wakanda1 iframe {
   height: 14.5vw;
@@ -766,8 +728,6 @@ footer .b .h {
   width: 32.73846153vw;
   position: relative;
   top: 9vw;
-  animation: fadeIn 4s;
-  animation-delay: 2s;
 }
 .wrapper main .main-wakanda .main-wakanda2 img {
   display: block;
@@ -795,16 +755,16 @@ footer .b .h {
   left: 55vw;
   width: 33vw;
 }
-.wrapper main .main-enigme .image-0 .enigme-title .title1,
-.wrapper main .main-enigme .image-0 .enigme-title .title2 {
+.wrapper main .main-enigme .image-0 .enigme-title h1 .title1,
+.wrapper main .main-enigme .image-0 .enigme-title h1 .title2 {
   width: 31vw;
   margin: 0;
   font-family: "BEYNO";
-  font-size: 3.4vw;
+  font-size: 3vw;
   font-weight: 400;
   text-align: justify;
 }
-.wrapper main .main-enigme .image-0 .enigme-title .title1 {
+.wrapper main .main-enigme .image-0 .enigme-title h1 .title1 {
   letter-spacing: 0.1vw;
   word-spacing: 0.9vw;
 }
@@ -899,8 +859,10 @@ footer .b .h {
 .wrapper main .main-enigme .formulaire input[type=text] {
   width: 100%;
   height: 2.8vw;
+  font-size: 1.3vw;
   color: #fff;
   display: block;
+  padding: 0 2vw;
   margin: 0.9vw 0;
   border: 1px solid #fff;
   background-color: transparent;
@@ -934,6 +896,53 @@ footer .b .h {
 .wrapper main .main-enigme .formulaire input[type=submit]:hover {
   filter: drop-shadow(0 0 0.5vw #f2cef2);
   -webkit-filter: drop-shadow(0 0 0.5vw #f2cef2);
+}
+
+.wrap {
+  background: radial-gradient(ellipse at top left, #11213f -205%, #0b0b0b 80%, #021740);
+}
+.wrap div {
+  height: 48.5vw;
+  color: #fff;
+  background-image: url("/assets/illustration et logo/1_Landing_page/Panterhome4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrap div .popup {
+  width: 50.5vw;
+  height: 34vw;
+  background-image: linear-gradient(180deg, rgb(242, 206, 242) 10%, rgba(242, 206, 242, 0.1) 90%);
+  position: absolute;
+  top: 6.4vw;
+  left: 22.3vw;
+  font-family: "Panthera";
+  font-size: 3vw;
+  font-weight: 700;
+  letter-spacing: 0.3vw;
+  color: #3d2da6;
+  text-align: center;
+  line-height: 34vw;
+  border-radius: 10vw;
+  -webkit-border-radius: 10vw;
+  -moz-border-radius: 10vw;
+  -ms-border-radius: 10vw;
+  -o-border-radius: 10vw;
+}
+
+.wrapper .popupEnigme {
+  width: 46vw;
+  height: 30vw;
+  border: 1px solid blue;
+  border-radius: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .popupEnigme .message {
+  min-width: 20vw;
+  height: 3vw;
+  border: 1px solid blue;
+  border-radius: 1.5vw;
 }
 
 /*# sourceMappingURL=styles.css.map */

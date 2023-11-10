@@ -33,3 +33,33 @@ window.addEventListener("scroll", handleScrollFadeSlide);
 
 // Appel de la fonction handleScrollFadeSlide
 handleScrollFadeSlide();
+
+// ZOOM DE 10px DE PLUS AU PASSAGE DE LA SOURIE POUR LES TITRES "h1" et "h2" DES TROIS PAGES
+
+// zoom de "h1" : de 68px à 78px soit un grandissement de 15% --> scale(1.2)
+
+$("h1").mouseenter(function () {
+	$(this).css({
+		cursor: "pointer",
+		transition: "0.3s ease-in-out",
+		scale: "1.2",
+	});
+});
+
+$("h1").mouseleave(function () {
+	$(this).css("scale", "1");
+});
+
+// zoom de "h2" : de 32px à 42px soit un grandissement de 31% --> scale(1.31)
+
+$("h2").mouseenter(function () {
+	$(this).css({
+		cursor: "pointer",
+		transition: "0.3s ease-in-out",
+		scale: "1.31",
+	});
+});
+
+$("h2").mouseleave(function () {
+	$(this).css("scale", "1");
+});

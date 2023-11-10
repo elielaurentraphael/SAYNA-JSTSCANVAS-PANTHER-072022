@@ -1,0 +1,18 @@
+.wrapper {
+	.popupEnigme {
+		//display: none;
+		width: 46vw;
+		height: 30vw;
+		border: 1px solid blue;
+		border-radius: 3vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.message {
+			min-width: 20vw;
+			height: 3vw;
+			border: 1px solid blue;
+			border-radius: 1.5vw;
+		}
+	}
+}
