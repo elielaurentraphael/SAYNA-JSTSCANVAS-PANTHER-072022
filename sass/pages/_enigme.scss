@@ -1,8 +1,8 @@
 .wrapper {
+	overflow-x: hidden;
 	main {
 		.main-enigme {
 			color: $text-main-enigme-color;
-			height: 100.9vw;
 			position: relative;
 			animation: fadeIn 4s;
 			animation-delay: 2s;
@@ -167,6 +167,22 @@
 						-webkit-filter: drop-shadow(0 0 0.5vw $bg-btn-submit-color);
 					}
 				}
+			}
+		}
+		.popupEnigme {
+			display: none;
+			width: 46vw;
+			height: 40vw;
+			border: 1px solid rgb(255, 0, 0);
+			border-radius: 3vw;
+			margin: 0 auto 5vw auto;
+			justify-content: center;
+			align-items: center;
+			.message {
+				min-width: 20vw;
+				height: 3vw;
+				border: 1px solid rgb(136, 255, 0);
+				border-radius: 1.5vw;
 			}
 		}
 	}

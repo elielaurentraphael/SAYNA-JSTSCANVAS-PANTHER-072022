@@ -734,9 +734,11 @@ footer .b .h {
   width: 32vw;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
 .wrapper main .main-enigme {
   color: blanchedalmond;
-  height: 100.9vw;
   position: relative;
   animation: fadeIn 4s;
   animation-delay: 2s;
@@ -897,6 +899,22 @@ footer .b .h {
   filter: drop-shadow(0 0 0.5vw #f2cef2);
   -webkit-filter: drop-shadow(0 0 0.5vw #f2cef2);
 }
+.wrapper main .popupEnigme {
+  display: none;
+  width: 46vw;
+  height: 40vw;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 3vw;
+  margin: 0 auto 5vw auto;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper main .popupEnigme .message {
+  min-width: 20vw;
+  height: 3vw;
+  border: 1px solid rgb(136, 255, 0);
+  border-radius: 1.5vw;
+}
 
 .wrap {
   background: radial-gradient(ellipse at top left, #11213f -205%, #0b0b0b 80%, #021740);
@@ -927,22 +945,6 @@ footer .b .h {
   -moz-border-radius: 10vw;
   -ms-border-radius: 10vw;
   -o-border-radius: 10vw;
-}
-
-.wrapper .popupEnigme {
-  width: 46vw;
-  height: 30vw;
-  border: 1px solid blue;
-  border-radius: 3vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.wrapper .popupEnigme .message {
-  min-width: 20vw;
-  height: 3vw;
-  border: 1px solid blue;
-  border-radius: 1.5vw;
 }
 
 /*# sourceMappingURL=styles.css.map */

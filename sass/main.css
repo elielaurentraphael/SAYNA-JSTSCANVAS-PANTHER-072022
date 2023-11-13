@@ -894,12 +894,14 @@ footer .b .h {
   -o-border-radius: 2vw;
 }
 .wrapper main .main-enigme .formulaire input[type=text]::-moz-placeholder {
+  background-color: transparent;
   color: #fff;
   padding-left: 1.6vw;
   font-family: "Cantarell";
   font-size: 0.8vw;
 }
 .wrapper main .main-enigme .formulaire input[type=text]::placeholder {
+  background-color: transparent;
   color: #fff;
   padding-left: 1.6vw;
   font-family: "Cantarell";
@@ -954,11 +956,5 @@ footer .b .h {
   -moz-border-radius: 10vw;
   -ms-border-radius: 10vw;
   -o-border-radius: 10vw;
-}
-
-.popupEnigme {
-  width: 50vw;
-  height: 30vw;
-  border: 1px solid blue;
 }
 /*# sourceMappingURL=main.css.map */
