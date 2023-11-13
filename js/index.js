@@ -191,3 +191,40 @@ $("#person1").on("click", function () {
 $("#person2").on("click", function () {
 	$("#select").attr("src", $(this).attr("src"));
 });
+
+// POPUP BOX DU FORMULAIRE
+
+// définition des constantes
+const formulaire = document.querySelector(".formulaire");
+const popup = document.querySelector(".popup");
+const inputTextLanding = document.querySelector(".inputTextLanding");
+const inputMailLanding = document.querySelector(".inputMailLanding");
+const inputTextareaLanding = document.querySelector(".inputTextareaLanding");
+const btnFormLanding = document.querySelector(".btnFormLanding");
+
+document.addEventListener("DOMContentLoaded", () => {
+	btnFormLanding.addEventListener("click", function (e) {
+		e.preventDefault();
+		if (!inputTextLanding.value == "" && !inputMailLanding.value == "") {
+			$(".popup").html("Message recu<br />Merci !");
+			$(".formulaire").css("display", "none");
+			$(".popup").css("display", "flex");
+			setTimeout(() => {
+				$(".popup").css("display", "none");
+				$(".popup").html("");
+				$(".inputTextLanding").val("");
+				$(".inputMailLanding").val("");
+				$(".formulaire").css("display", "block");
+			}, 4000);
+		} else {
+			$(".popup").html("Veuillez renseigner<br />votre nom et adresse email");
+			$(".formulaire").css("display", "none");
+			$(".popup").css("display", "flex");
+			setTimeout(() => {
+				$(".popup").css("display", "none");
+				$(".popup").html("");
+				$(".formulaire").css("display", "block");
+			}, 4000);
+		}
+	});
+});

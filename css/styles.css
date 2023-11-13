@@ -566,6 +566,7 @@ footer .b .h {
   -o-border-radius: 3.4vw;
 }
 .wrapper main .contact .formulaire {
+  display: block;
   width: 50.5vw;
   height: 34vw;
   border-radius: 10vw;
@@ -651,6 +652,29 @@ footer .b .h {
 .wrapper main .contact .formulaire form input[type=submit]:hover {
   filter: drop-shadow(0 0 0.5vw #fff);
   -webkit-filter: drop-shadow(0 0 0.5vw #fff);
+}
+.wrapper main .contact .popup {
+  display: none;
+  width: 50.5vw;
+  height: 34vw;
+  background-image: linear-gradient(180deg, rgb(242, 206, 242) 10%, rgba(242, 206, 242, 0.1) 90%);
+  position: absolute;
+  top: 6.4vw;
+  left: 22.3vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Panthera";
+  font-size: 3vw;
+  font-weight: 700;
+  letter-spacing: 0.3vw;
+  color: #3d2da6;
+  line-height: 4vw;
+  border-radius: 10vw;
+  -webkit-border-radius: 10vw;
+  -moz-border-radius: 10vw;
+  -ms-border-radius: 10vw;
+  -o-border-radius: 10vw;
 }
 
 .wrapper {
@@ -914,37 +938,6 @@ footer .b .h {
   height: 3vw;
   border: 1px solid rgb(136, 255, 0);
   border-radius: 1.5vw;
-}
-
-.wrap {
-  background: radial-gradient(ellipse at top left, #11213f -205%, #0b0b0b 80%, #021740);
-}
-.wrap div {
-  height: 48.5vw;
-  color: #fff;
-  background-image: url("/assets/illustration et logo/1_Landing_page/Panterhome4.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.wrap div .popup {
-  width: 50.5vw;
-  height: 34vw;
-  background-image: linear-gradient(180deg, rgb(242, 206, 242) 10%, rgba(242, 206, 242, 0.1) 90%);
-  position: absolute;
-  top: 6.4vw;
-  left: 22.3vw;
-  font-family: "Panthera";
-  font-size: 3vw;
-  font-weight: 700;
-  letter-spacing: 0.3vw;
-  color: #3d2da6;
-  text-align: center;
-  line-height: 34vw;
-  border-radius: 10vw;
-  -webkit-border-radius: 10vw;
-  -moz-border-radius: 10vw;
-  -ms-border-radius: 10vw;
-  -o-border-radius: 10vw;
 }
 
 /*# sourceMappingURL=styles.css.map */

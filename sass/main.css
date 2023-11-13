@@ -671,6 +671,33 @@ footer .b .h {
   filter: drop-shadow(0 0 0.5vw #fff);
   -webkit-filter: drop-shadow(0 0 0.5vw #fff);
 }
+.wrapper main .popupBox {
+  height: 48.5vw;
+  color: #fff;
+  background-image: url("/assets/illustration et logo/1_Landing_page/Panterhome4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper main .popupBox .popup {
+  width: 50.5vw;
+  height: 34vw;
+  background-image: linear-gradient(180deg, rgb(242, 206, 242) 10%, rgba(242, 206, 242, 0.1) 90%);
+  position: absolute;
+  top: 6.4vw;
+  left: 22.3vw;
+  font-family: "Panthera";
+  font-size: 3vw;
+  font-weight: 700;
+  letter-spacing: 0.3vw;
+  color: #3d2da6;
+  text-align: center;
+  line-height: 34vw;
+  border-radius: 10vw;
+  -webkit-border-radius: 10vw;
+  -moz-border-radius: 10vw;
+  -ms-border-radius: 10vw;
+  -o-border-radius: 10vw;
+}
 
 .wrapper {
   background: radial-gradient(ellipse at top left, #11213f -205%, #0b0b0b 80%, #021740);
@@ -753,9 +780,11 @@ footer .b .h {
   width: 32vw;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
 .wrapper main .main-enigme {
   color: blanchedalmond;
-  height: 100.9vw;
   position: relative;
   -webkit-animation: fadeIn 4s;
           animation: fadeIn 4s;
@@ -894,14 +923,12 @@ footer .b .h {
   -o-border-radius: 2vw;
 }
 .wrapper main .main-enigme .formulaire input[type=text]::-moz-placeholder {
-  background-color: transparent;
   color: #fff;
   padding-left: 1.6vw;
   font-family: "Cantarell";
   font-size: 0.8vw;
 }
 .wrapper main .main-enigme .formulaire input[type=text]::placeholder {
-  background-color: transparent;
   color: #fff;
   padding-left: 1.6vw;
   font-family: "Cantarell";
@@ -926,35 +953,20 @@ footer .b .h {
   filter: drop-shadow(0 0 0.5vw #f2cef2);
   -webkit-filter: drop-shadow(0 0 0.5vw #f2cef2);
 }
-
-.wrap {
-  background: radial-gradient(ellipse at top left, #11213f -205%, #0b0b0b 80%, #021740);
+.wrapper main .popupEnigme {
+  display: none;
+  width: 46vw;
+  height: 40vw;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 3vw;
+  margin: 0 auto 5vw auto;
+  justify-content: center;
+  align-items: center;
 }
-.wrap div {
-  height: 48.5vw;
-  color: #fff;
-  background-image: url("/assets/illustration et logo/1_Landing_page/Panterhome4.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.wrap div .popup {
-  width: 50.5vw;
-  height: 34vw;
-  background-image: linear-gradient(180deg, rgb(242, 206, 242) 10%, rgba(242, 206, 242, 0.1) 90%);
-  position: absolute;
-  top: 6.4vw;
-  left: 22.3vw;
-  font-family: "Panthera";
-  font-size: 3vw;
-  font-weight: 700;
-  letter-spacing: 0.3vw;
-  color: #3d2da6;
-  text-align: center;
-  line-height: 34vw;
-  border-radius: 10vw;
-  -webkit-border-radius: 10vw;
-  -moz-border-radius: 10vw;
-  -ms-border-radius: 10vw;
-  -o-border-radius: 10vw;
+.wrapper main .popupEnigme .message {
+  min-width: 20vw;
+  height: 3vw;
+  border: 1px solid rgb(136, 255, 0);
+  border-radius: 1.5vw;
 }
 /*# sourceMappingURL=main.css.map */
