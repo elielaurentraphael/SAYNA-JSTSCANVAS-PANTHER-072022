@@ -153,19 +153,7 @@ const infoName2 = document.querySelector(".text1 p");
 
 let indice = 0;
 
-// à l'ouverture de la page (ou à chaque rafraîchissement / actualisation), le defilé des personnages débute automatiquement
-
-$(document).ready(function () {
-	$("#person1").attr("src", arrayPerson[indice]);
-	$(".text2 h3").html(arrayName[indice]);
-	$(".text2 p").html(arrayInfo[indice]);
-
-	$("#person2").attr("src", arrayPerson[indice + 1]);
-	$(".text1 h3").html(arrayName[indice + 1]);
-	$(".text1 p").html(arrayInfo[indice + 1]);
-});
-
-// après, le defilé continue par appuye du bouton "btnNext"
+// défilé des personnages par appuye du bouton "btnNext"
 
 btnNext.addEventListener("click", (e) => {
 	e.preventDefault();
@@ -191,4 +179,15 @@ btnNext.addEventListener("click", (e) => {
 
 		indice = 0;
 	}
+});
+
+// SELECTION D'UNE IMAGE
+
+// l'image selectionnée se retrouve toujours sur l'extrémité gauche du bandeau
+$("#person1").on("click", function () {
+	$("#select").attr("src", $(this).attr("src"));
+});
+
+$("#person2").on("click", function () {
+	$("#select").attr("src", $(this).attr("src"));
 });
