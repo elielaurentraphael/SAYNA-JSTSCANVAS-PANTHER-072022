@@ -77,3 +77,12 @@ $(window).on("load", function () {
 		console.log(scroll);
 	});
 });
+
+// ANIMATION DES TRAITS VIOLETS DU COTE HAUT GAUCHE A L'OUVERTURE DE LA PAGE
+
+$(window).on("load", function () {
+	// 3s après le chargement de la page, le top des traits violets varie de -26.1vw à 0 (voir fichier _trait-lateral.scss / ligne 5), durée de l'animation: 2.5s
+	setTimeout(() => {
+		$(".lateral-out").animate({ top: "0" }, 2500);
+	}, 3000);
+});
