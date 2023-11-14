@@ -181,7 +181,7 @@ btnNext.addEventListener("click", (e) => {
 	}
 });
 
-// SELECTION D'UNE IMAGE
+// SELECTION D'UNE IMAGE SUR LE BANDEAU
 
 // l'image selectionnée se retrouve toujours sur l'extrémité gauche du bandeau
 $("#person1").on("click", function () {
