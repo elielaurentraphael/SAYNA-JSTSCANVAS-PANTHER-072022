@@ -74,7 +74,6 @@ $(window).on("load", function () {
 	$(window).scroll(function () {
 		let scroll = $(window).scrollTop();
 		$(".lateral-out").css("top", scroll + "px");
-		console.log(scroll);
 	});
 });
 
@@ -86,3 +85,37 @@ $(window).on("load", function () {
 		$(".lateral-out").animate({ top: "0" }, 2500);
 	}, 3000);
 });
+
+// ANIMATION DE LA SOURIE EN CANVAS
+
+const canvas = document.querySelector("canvas");
+const ctx = canvas.getContext("2d");
+
+// on met l'image dans le canvas et, c'est le canvas qui va suivre la souris
+canvas.style.position = "absolute";
+canvas.style.pointerEvents = "none";
+
+// on écoute le mouvement de la souris et, on récupère ses coordonnées
+window.addEventListener("mousemove", canvasPos);
+
+// position de la souris (e.pageX, e.pageY)
+function canvasPos(e) {
+	canvas.style.top = e.pageY + "px";
+	canvas.style.left = e.pageX + "px";
+}
+
+// on donne des dimensions au canvas
+canvas.style.width = "4vw";
+canvas.style.height = "4vw";
+
+// on crée une image sourisPanther avec la classe "Image"
+let sourisPanther = new Image();
+
+sourisPanther.onload = function () {
+	// après le chargement de l'image source
+	// on dessine le "sourisPanther" sur le canvas et, on adapte ses dimensions aux dimensions du canvas
+	ctx.drawImage(sourisPanther, 0, 0, 300, 150);
+};
+
+// chemin de la source de l'image sourisPanther
+sourisPanther.src = "../assets/illustration et logo/logo_souris_BP2_blanc.png";
