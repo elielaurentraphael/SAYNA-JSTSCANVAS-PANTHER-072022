@@ -120,3 +120,19 @@ sourisPanther.onload = function () {
 
 // chemin de la source de l'image sourisPanther
 sourisPanther.src = "./assets/illustration et logo/logo_souris_BP2_blanc.png";
+
+// EFFET HOVER DES RESEAUX SOCIAUX DU FOOTER
+
+$(window).on("load", function () {
+	$(".facebook, .tictok, .twiter, .instagram").mouseenter(function () {
+		$(this).css({
+			cursor: "pointer",
+			transition: "0.3s ease-in-out",
+			scale: "1.3",
+		});
+	});
+
+	$(".facebook, .tictok, .twiter, .instagram").mouseleave(function () {
+		$(this).css("scale", "1");
+	});
+});

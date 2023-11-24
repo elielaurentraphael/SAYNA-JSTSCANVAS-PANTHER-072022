@@ -81,7 +81,7 @@ footer {
 	.b {
 		color: #fff;
 		width: 52.795%;
-		font-family: "Catarell";
+		font-family: "Cantarell";
 
 		.c {
 			height: 28.3vw;
@@ -128,41 +128,17 @@ footer {
 				.g {
 					img {
 						width: 2.7vw;
-						cursor: pointer;
 					}
 
-					.facebook {
-						margin-right: 0.56vw;
-						transition: transform 400ms;
-						-webkit-transition: transform 400ms;
-						-moz-transition: transform 400ms;
-						-ms-transition: transform 400ms;
-						-o-transition: transform 400ms;
-						&:hover {
-							transform: scale(1.1);
-							-webkit-transform: scale(1.1);
-							-moz-transform: scale(1.1);
-							-ms-transform: scale(1.1);
-							-o-transform: scale(1.1);
-						}
-					}
-
+					.facebook,
 					.tictok,
 					.twiter,
 					.instagram {
 						margin: 0 0.56vw;
-						transition: transform 400ms;
-						-webkit-transition: transform 400ms;
-						-moz-transition: transform 400ms;
-						-ms-transition: transform 400ms;
-						-o-transition: transform 400ms;
-						&:hover {
-							transform: scale(1.1);
-							-webkit-transform: scale(1.1);
-							-moz-transform: scale(1.1);
-							-ms-transform: scale(1.1);
-							-o-transform: scale(1.1);
-						}
+					}
+
+					.facebook {
+						margin-left: 0;
 					}
 				}
 			}
