@@ -124,7 +124,16 @@ $(window).on("load", () => {
 					);
 					reponse.value = "";
 					setTimeout(() => {
-						affichageEnigmeNum(numeroEnigme);
+						if (numeroEnigme == 2) {
+							affichageEnigmeNum(numeroEnigme);
+							$(".enigmePhrase2").css({
+								fontSize: "1.15vw",
+								wordSpacing: "0.1vw",
+								letterSpacing: "0.01vw",
+							});
+						} else {
+							affichageEnigmeNum(numeroEnigme);
+						}
 					}, 5000);
 				} else {
 					// fausse, on invite l'utilisateur àreéssayer

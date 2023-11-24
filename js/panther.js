@@ -86,13 +86,14 @@ $(window).on("load", function () {
 	}, 3000);
 });
 
-// ANIMATION DE LA SOURIE EN CANVAS
+// ANIMATION DE LA SOURIS EN CANVAS
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
 // on met l'image dans le canvas et, c'est le canvas qui va suivre la souris
 canvas.style.position = "absolute";
+// canvas.style.transform = "translate(-50%, -50%)";
 canvas.style.pointerEvents = "none";
 
 // on écoute le mouvement de la souris et, on récupère ses coordonnées
@@ -109,13 +110,13 @@ canvas.style.width = "4vw";
 canvas.style.height = "4vw";
 
 // on crée une image sourisPanther avec la classe "Image"
-let sourisPanther = new Image();
+const sourisPanther = new Image();
 
 sourisPanther.onload = function () {
-	// après le chargement de l'image source
-	// on dessine le "sourisPanther" sur le canvas et, on adapte ses dimensions aux dimensions du canvas
+	// on dessine (une fois pour toute) le "chauveSouris" et, on adapte ses dimensions aux dimensions du canvas
+	// on n'a pas besoin d'effacer le canvas à chaque mouvement de la souris car les coordonnées (0, 0) du "chauveSouris" sur le canvas ne changent pas (c'est le canvas qui bouge avec la souris et, le dessin du "chauveSouris" est immobile sur le canvas).
 	ctx.drawImage(sourisPanther, 0, 0, 300, 150);
 };
 
 // chemin de la source de l'image sourisPanther
-sourisPanther.src = "../assets/illustration et logo/logo_souris_BP2_blanc.png";
+sourisPanther.src = "./assets/illustration et logo/logo_souris_BP2_blanc.png";

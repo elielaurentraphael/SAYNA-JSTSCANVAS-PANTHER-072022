@@ -22,19 +22,19 @@ body {
 
 @font-face {
   font-family: "BEYNO";
-  src: url(/fonts/beyno-regular.otf);
+  src: url("/fonts/beyno-regular.otf") format("opentype");
 }
 @font-face {
   font-family: "Cantarell";
-  src: url(/fonts/Cantarell-Regular.ttf);
+  src: url("/fonts/Cantarell-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Panthera";
-  src: url(/fonts/PantheraRegular-MVZ9J.ttf);
+  src: url("/fonts/PantheraRegular-MVZ9J.ttf") format("truetype");
 }
 @font-face {
   font-family: "Wakanda forever";
-  src: url(/fonts/WakandaForever-Regular.ttf);
+  src: url("/fonts/WakandaForever-Regular.ttf") format("truetype");
 }
 nav {
   display: flex;
@@ -50,7 +50,7 @@ nav div img:hover {
   filter: invert(92%) sepia(76%) saturate(6001%) hue-rotate(358deg) brightness(38%) contrast(107%);
 }
 nav div ul {
-  font-family: "BEYNO";
+  font-family: "BEYNO", sans-serif;
   font-size: 1vw;
   list-style: none;
 }
@@ -285,7 +285,7 @@ footer .b .h {
   top: -2.6vw;
 }
 .wrapper header .titre .bloc h1 {
-  font-family: "Panthera", sans-serif, arial;
+  font-family: "Panthera", sans-serif, Arial;
   font-size: 3vw;
   letter-spacing: 0.3vw;
   color: #9e91b7;
